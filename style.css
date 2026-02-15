@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #000;
+    padding: 20px 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+.menu-section {
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.menu-card {
+    background: #fff;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.food-image {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.food-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.card-content h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.order-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #333;
+}
+
+.contact-section {
+    background-color: #000;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: #fff;
+    width: 100px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #444;
+    background: #fff;
+    font-size: 14px;
+}
+
+.send-btn {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.send-btn:hover {
+    background-color: #FFC700;
+}
+
+.circle-decoration {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.circle-top {
+    background: linear-gradient(135deg, #5B4DFF 0%, #7B68EE 100%);
+    top: 50px;
+    right: -100px;
+}
+
+.circle-bottom {
+    background: repeating-linear-gradient(
+        45deg,
+        #5B4DFF,
+        #5B4DFF 10px,
+        #fff 10px,
+        #fff 20px
+    );
+    bottom: 200px;
+    left: -100px;
+}
